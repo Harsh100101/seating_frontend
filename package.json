@@ -1,0 +1,41 @@
+{
+    "name":  "seating-frontend",
+    "version":  "1.0.0",
+    "private":  true,
+    "type":  "module",
+    "scripts":  {
+                    "dev":  "vite",
+                    "build":  "tsc \u0026\u0026 vite build",
+                    "typecheck":  "tsc --noEmit",
+                    "test":  "vitest run",
+                    "lint":  "eslint src",
+                    "clean":  "node -e \"const fs = require(\u0027fs\u0027); if (fs.existsSync(\u0027dist\u0027)) fs.rmSync(\u0027dist\u0027, { recursive: true, force: true });\"",
+                    "preview":  "vite preview"
+                },
+    "dependencies":  {
+                         "react-dom":  "^18.3.1",
+                         "konva":  "^9.3.18",
+                         "react-router-dom":  "7.18.2",
+                         "clsx":  "^2.1.1",
+                         "react":  "^18.3.1",
+                         "react-konva":  "^18.2.10",
+                         "pdfjs-dist":  "4.10.38",
+                         "lucide-react":  "^0.468.0",
+                         "xlsx":  "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz",
+                         "@tanstack/react-query":  "^5.62.7",
+                         "framer-motion":  "^14.8.0",
+                         "tailwind-merge":  "^2.5.5"
+                     },
+    "devDependencies":  {
+                            "@types/node":  "^22.10.1",
+                            "@types/react":  "^18.3.18",
+                            "@types/react-dom":  "^18.3.5",
+                            "@vitejs/plugin-react":  "^4.3.4",
+                            "autoprefixer":  "^10.4.20",
+                            "postcss":  "^8.4.49",
+                            "tailwindcss":  "^3.4.16",
+                            "typescript":  "^5.7.3",
+                            "vite":  "^6.0.3",
+                            "vitest":  "^2.1.8"
+                        }
+}
